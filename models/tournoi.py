@@ -1,6 +1,7 @@
 import json
 
 from models.joueur import Joueur
+from random import choice
 
 
 class Tournoi(object) :
@@ -16,7 +17,8 @@ class Tournoi(object) :
 
 
     def ajouterJoueur(self, joueur):
-        if(self.joueurs.__contains__(joueur)):
+        found = any(x.nom == joueur.nom and x.prenom == joueur.prenom for x in self.joueurs)
+        if(found):
             print("Ce joueur est déjà enregistré ==> ", joueur.nom," ", joueur.prenom," ", "Date de naissance: ", joueur.dateDeNaissance)
         else:
             self.joueurs.append(joueur)
@@ -34,3 +36,15 @@ class Tournoi(object) :
     def afficherJoueursDuTournoi(self):
         for joueur in self.joueurs:
             joueur.afficher()
+
+    def tirage(self):
+        l = self.joueurs
+        o = []
+        while l:
+            p = []
+            for i in range(4):
+                e = choice(l)
+                p.append(e)
+                l.remove(e)
+            o.append(p)
+        return o
