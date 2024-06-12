@@ -1,0 +1,56 @@
+[
+  {
+    "id": "IK00001",
+    "nom": "Konate",
+    "prenom": "Issa",
+    "dateDeNaissance": "01/01/1988"
+  },
+  {
+    "id": "IK00002",
+    "nom": "Sacko",
+    "prenom": "Dipa",
+    "dateDeNaissance": "01/01/1993"
+  },
+  {
+    "id": "IK00003",
+    "nom": "Ouedrago",
+    "prenom": "Anna",
+    "dateDeNaissance": "01/01/2000"
+  },
+  {
+    "id": "IK00004",
+    "nom": "Ballo",
+    "prenom": "Madou",
+    "dateDeNaissance": "01/01/2000"
+  },
+  {
+    "id": "IK00005",
+    "nom": "Sacko",
+    "prenom": "Adbou",
+    "dateDeNaissance": "01/01/2000"
+  },
+  {
+    "id": "IK00006",
+    "nom": "Diawara",
+    "prenom": "Issa",
+    "dateDeNaissance": "01/01/2000"
+  },
+  {
+    "id": "IK00007",
+    "nom": "Sacko",
+    "prenom": "Adbou",
+    "dateDeNaissance": "01/01/2000"
+  },
+  {
+    "id": "IK00008",
+    "nom": "Malle",
+    "prenom": "Issouf",
+    "dateDeNaissance": "01/01/2000"
+  },
+  {
+    "id": "IK00009",
+    "nom": "Sacko",
+    "prenom": "Yacou",
+    "dateDeNaissance": "01/01/2000"
+  }
+]
