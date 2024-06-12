@@ -1,0 +1,261 @@
+{
+    "dateDeDebut": "01/01/2024",
+    "dateDeFin": null,
+    "joueurs": [],
+    "joueursQualifies": [
+        {
+            "dateDeNaissance": "01/01/2000",
+            "id": "IK00003",
+            "nom": "Ouedrago",
+            "point": 3,
+            "prenom": "Anna"
+        }
+    ],
+    "lieu": "Cote d'Ivoire",
+    "nom": "CAN 2024",
+    "nombreTours": 4,
+    "numeroTourActuel": 2,
+    "tours": [
+        {
+            "dateDeDebut": "",
+            "dateDeFin": "",
+            "matchs": [
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "prenom": "Issa"
+                        },
+                        "qualifier": -1,
+                        "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 1,
+                            "prenom": "Dipa"
+                        },
+                        "qualifier": 1,
+                        "score": 2
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/1993",
+                        "id": "IK00002",
+                        "nom": "Sacko",
+                        "point": 1,
+                        "prenom": "Dipa"
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Konate",
+                            "prenom": "Issa"
+                        },
+                        "qualifier": -1,
+                        "score": 3
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00009",
+                            "nom": "Sacko",
+                            "point": 2,
+                            "prenom": "Yacou"
+                        },
+                        "qualifier": 1,
+                        "score": 4
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/2000",
+                        "id": "IK00009",
+                        "nom": "Sacko",
+                        "point": 2,
+                        "prenom": "Yacou"
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00008",
+                            "nom": "Malle",
+                            "prenom": "Issouf"
+                        },
+                        "qualifier": -1,
+                        "score": 5
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 1,
+                            "prenom": "Adbou"
+                        },
+                        "qualifier": 1,
+                        "score": 6
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/2000",
+                        "id": "IK00005",
+                        "nom": "Sacko",
+                        "point": 1,
+                        "prenom": "Adbou"
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00004",
+                            "nom": "Ballo",
+                            "prenom": "Madou"
+                        },
+                        "qualifier": -1,
+                        "score": 7
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 3,
+                            "prenom": "Anna"
+                        },
+                        "qualifier": 1,
+                        "score": 8
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/2000",
+                        "id": "IK00003",
+                        "nom": "Ouedrago",
+                        "point": 3,
+                        "prenom": "Anna"
+                    }
+                }
+            ],
+            "nomTour": ""
+        },
+        {
+            "dateDeDebut": "9",
+            "dateDeFin": "9",
+            "matchs": [
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 1,
+                            "prenom": "Adbou"
+                        },
+                        "qualifier": -1,
+                        "score": 9
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00009",
+                            "nom": "Sacko",
+                            "point": 2,
+                            "prenom": "Yacou"
+                        },
+                        "qualifier": 1,
+                        "score": 10
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/2000",
+                        "id": "IK00009",
+                        "nom": "Sacko",
+                        "point": 2,
+                        "prenom": "Yacou"
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 1,
+                            "prenom": "Dipa"
+                        },
+                        "qualifier": -1,
+                        "score": 11
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 3,
+                            "prenom": "Anna"
+                        },
+                        "qualifier": 1,
+                        "score": 12
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/2000",
+                        "id": "IK00003",
+                        "nom": "Ouedrago",
+                        "point": 3,
+                        "prenom": "Anna"
+                    }
+                }
+            ],
+            "nomTour": "Tour N\u00b0 : 0"
+        },
+        {
+            "dateDeDebut": "1",
+            "dateDeFin": "1",
+            "matchs": [
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00009",
+                            "nom": "Sacko",
+                            "point": 2,
+                            "prenom": "Yacou"
+                        },
+                        "qualifier": -1,
+                        "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 3,
+                            "prenom": "Anna"
+                        },
+                        "qualifier": 1,
+                        "score": 2
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/2000",
+                        "id": "IK00003",
+                        "nom": "Ouedrago",
+                        "point": 3,
+                        "prenom": "Anna"
+                    }
+                }
+            ],
+            "nomTour": "Tour N\u00b0 : 1"
+        }
+    ],
+    "vainqueurFinal": {
+        "dateDeNaissance": "01/01/2000",
+        "id": "IK00003",
+        "nom": "Ouedrago",
+        "point": 3,
+        "prenom": "Anna"
+    }
+}

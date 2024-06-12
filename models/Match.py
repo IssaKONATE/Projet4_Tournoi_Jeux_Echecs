@@ -41,7 +41,7 @@ class Match(object) :
         inputVar = -1
         while loop:
             try:
-                inputVar = int(input("Enter a number: "))
+                inputVar = int(input("Enter a score : "))
                 loop = False
             except ValueError:
                 print("Veuillez entrer un entier")
