@@ -1,12 +1,7 @@
 # Projet4_Tournoi_Jeux_Echecs
 
 
-Sam                                                 Books Online
-                                                    12/10/2023
-
-Ce fichier a été généré le 12-10-2023 par Issa KONATE Analyst marketing chez Books Online
-
-# Projet 2 :  <Utilisez les bases de Python pour l'analyse de marché>
+# Projet 4 :  <Projet4_Tournoi_Jeux_Echecs>
 
 ## Pipeline ETL du code d’application python exécutable à la demande 
       
@@ -17,7 +12,8 @@ Ce fichier a été généré le 12-10-2023 par Issa KONATE Analyst marketing che
 
 #### Création de l'environnement virtuel du code 
 
-          - - Exécuter en étant à la racine du projet le code suivant :         python3 -m venv env
+          - - Exécuter en étant à la racine du projet le code suivant :         ls
+
           - - Taper et exécuter sur la commande : ls 
 
         <Vous allez-voir que vous avez créer un document env qui est votre environnement virtuel>
@@ -28,7 +24,7 @@ Ce fichier a été généré le 12-10-2023 par Issa KONATE Analyst marketing che
 
          - - Taper et exécuter sur la commande :                 source env/bin/activate  
 
-         <Vous allez-voir que votre terminal a ajouté  (env) en début de la ligne de commande, ceci est le comportement de l’activation de votre environnement virtuel >
+         <Vous allez-voir que votre terminal a ajouté  (env) en début de la ligne de commande, ceci est le comportement de l’activation de votre environnement virtuel
 
 ### Exécution du code
 

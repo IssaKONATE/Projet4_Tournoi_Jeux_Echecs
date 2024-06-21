@@ -2,7 +2,7 @@ import pickle
 import json
 from controller.TournoiController import TournoiController
 from models.tournoi import Tournoi
-from models.vue.TournoiScreen import TournoiScreen
+from vue.TournoiScreen import TournoiScreen
 
 # Main point d'entrée de l'application
 if __name__ == '__main__':
