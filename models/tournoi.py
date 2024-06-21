@@ -7,6 +7,19 @@ from random import choice
 
 
 class Tournoi(object) :
+
+    """
+    Cette classe nommée Tournoi représente le modèle du tournoi
+
+    Attributes:
+        nom (string): nom du tour
+        lieu (string): lieu du tournoi
+        dateDeFin (string): date de fin
+        dateDeDebut (string): date de fin
+        nombreTours (int): nombre de tours au total
+        numeroTourActuel (int): numero du tour actuel
+    """
+
     joueursJson = []
     joueursQualifies = []
     vainqueurFinal = None
@@ -25,6 +38,13 @@ class Tournoi(object) :
         self.tours = [Tour("", "", "", self.tirage())]
 
     def ajouterJoueur(self, joueur):
+
+        """
+        Cette méthode permet d'ajouter un joueur à la liste des joueurs
+        Args:
+           joueur (Joueur): le joueur à ajouter à la liste
+        """
+
         found = any(x.nom == joueur.nom and x.prenom == joueur.prenom for x in self.joueursJson)
         if (found):
             print("Ce joueur est déjà enregistré ==> ",
@@ -34,6 +54,13 @@ class Tournoi(object) :
             self.joueursJson.append(joueur)
 
     def initJoueursParFichierJson(self):
+
+        """
+        Cette méthode permet d'initialiser la liste des joueurs à partir d'un fichier json
+        Args:
+        Aucun
+        """
+
         dataJoueurs = []
         # Chargement du fichier json contenant les joueurs
         with open("data/tournaments/joueurs.json") as f:
@@ -47,12 +74,18 @@ class Tournoi(object) :
                 id = joueur['id']
                 self.ajouterJoueur(Joueur(nom=nom, prenom=prenom, dateDeNaissance=dateNaissance, id=id))
 
-    def afficherJoueursDuTournoi(self):
-        for joueur in self.joueursJson:
-            joueur.afficher()
-
     # Tirage au sort des joueurs et établit la liste des matchs pour ce tour
     def tirage(self):
+
+        """
+        Cette méthode permet de faire le tirage de façon aléatoire à partir de la liste des joueurs.
+        Args:
+        Aucun
+
+        Returns:
+        Match[]: return une liste de matchs qui opposent les joueurs deux à deux
+        """
+
         joueursQualifies = self.joueursQualifies
         matchs = []
         while joueursQualifies:

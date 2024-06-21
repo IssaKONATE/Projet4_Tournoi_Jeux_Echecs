@@ -1,13 +1,16 @@
 class Joueur(object) :
-    point = 0
-    couleur = None
+    """
+    Cette classe nommée Joueur modélise un joueur.
+    Attributes:
+        nom (string): nom du joueur
+        prenom (string): prénom du joueur
+        dateDeNaissance (string) sa date de naissance
+        id (int): son identité numérique
+    """
 
     def __init__(self, nom, prenom, dateDeNaissance, id):
         self.nom = nom
         self.prenom = prenom
         self.dateDeNaissance = dateDeNaissance
         self.id = id
-
-    def afficher(self):
-        print("Id: ", self.id, ", Nom : ", self.nom, ",Prenom : ", self.prenom, ", Date de naissance : "
-              , self.dateDeNaissance, ", Point : ", self.point)
+        self.point = 0

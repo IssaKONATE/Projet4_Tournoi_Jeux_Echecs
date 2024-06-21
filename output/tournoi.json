@@ -4,11 +4,11 @@
     "joueurs": [],
     "joueursQualifies": [
         {
-            "dateDeNaissance": "01/01/2000",
-            "id": "IK00003",
-            "nom": "Ouedrago",
+            "dateDeNaissance": "01/01/1993",
+            "id": "IK00002",
+            "nom": "Sacko",
             "point": 3,
-            "prenom": "Anna"
+            "prenom": "Dipa"
         }
     ],
     "lieu": "Cote d'Ivoire",
@@ -24,36 +24,6 @@
                     "scoring1": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "prenom": "Issa"
-                        },
-                        "qualifier": -1,
-                        "score": 1
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 1,
-                            "prenom": "Issouf"
-                        },
-                        "qualifier": 1,
-                        "score": 2
-                    },
-                    "vainqueur": {
-                        "dateDeNaissance": "01/01/2000",
-                        "id": "IK00008",
-                        "nom": "Malle",
-                        "point": 1,
-                        "prenom": "Issouf"
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
                             "id": "IK00009",
                             "nom": "Sacko",
                             "prenom": "Yacou"
@@ -64,20 +34,50 @@
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00004",
-                            "nom": "Ballo",
+                            "id": "IK00005",
+                            "nom": "Sacko",
                             "point": 1,
-                            "prenom": "Madou"
+                            "prenom": "Adbou"
                         },
                         "qualifier": 1,
                         "score": 2
                     },
                     "vainqueur": {
                         "dateDeNaissance": "01/01/2000",
-                        "id": "IK00004",
-                        "nom": "Ballo",
+                        "id": "IK00005",
+                        "nom": "Sacko",
                         "point": 1,
-                        "prenom": "Madou"
+                        "prenom": "Adbou"
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00004",
+                            "nom": "Ballo",
+                            "prenom": "Madou"
+                        },
+                        "qualifier": -1,
+                        "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 3,
+                            "prenom": "Dipa"
+                        },
+                        "qualifier": 1,
+                        "score": 2
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/1993",
+                        "id": "IK00002",
+                        "nom": "Sacko",
+                        "point": 3,
+                        "prenom": "Dipa"
                     }
                 },
                 {
@@ -94,29 +94,29 @@
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
+                            "id": "IK00008",
+                            "nom": "Malle",
                             "point": 2,
-                            "prenom": "Adbou"
+                            "prenom": "Issouf"
                         },
                         "qualifier": 1,
                         "score": 2
                     },
                     "vainqueur": {
                         "dateDeNaissance": "01/01/2000",
-                        "id": "IK00005",
-                        "nom": "Sacko",
+                        "id": "IK00008",
+                        "nom": "Malle",
                         "point": 2,
-                        "prenom": "Adbou"
+                        "prenom": "Issouf"
                     }
                 },
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1993",
-                            "id": "IK00002",
-                            "nom": "Sacko",
-                            "prenom": "Dipa"
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "prenom": "Anna"
                         },
                         "qualifier": -1,
                         "score": 1
@@ -124,28 +124,28 @@
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 1,
+                            "prenom": "Issa"
                         },
                         "qualifier": 1,
                         "score": 2
                     },
                     "vainqueur": {
                         "dateDeNaissance": "01/01/2000",
-                        "id": "IK00003",
-                        "nom": "Ouedrago",
-                        "point": 3,
-                        "prenom": "Anna"
+                        "id": "IK00006",
+                        "nom": "Diawara",
+                        "point": 1,
+                        "prenom": "Issa"
                     }
                 }
             ],
             "nomTour": ""
         },
         {
-            "dateDeDebut": "1",
-            "dateDeFin": "2",
+            "dateDeDebut": "11",
+            "dateDeFin": "11",
             "matchs": [
                 {
                     "scoring1": {
@@ -153,98 +153,98 @@
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00005",
                             "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
-                        },
-                        "qualifier": 1,
-                        "score": 2
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00004",
-                            "nom": "Ballo",
                             "point": 1,
-                            "prenom": "Madou"
+                            "prenom": "Adbou"
                         },
                         "qualifier": -1,
                         "score": 1
                     },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 3,
+                            "prenom": "Dipa"
+                        },
+                        "qualifier": 1,
+                        "score": 2
+                    },
                     "vainqueur": {
-                        "dateDeNaissance": "01/01/2000",
-                        "id": "IK00005",
+                        "dateDeNaissance": "01/01/1993",
+                        "id": "IK00002",
                         "nom": "Sacko",
-                        "point": 2,
-                        "prenom": "Adbou"
+                        "point": 3,
+                        "prenom": "Dipa"
                     }
                 },
                 {
                     "scoring1": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 1,
+                            "prenom": "Issa"
                         },
-                        "qualifier": 1,
-                        "score": 2
+                        "qualifier": -1,
+                        "score": 1
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00008",
                             "nom": "Malle",
-                            "point": 1,
-                            "prenom": "Issouf"
-                        },
-                        "qualifier": -1,
-                        "score": 1
-                    },
-                    "vainqueur": {
-                        "dateDeNaissance": "01/01/2000",
-                        "id": "IK00003",
-                        "nom": "Ouedrago",
-                        "point": 3,
-                        "prenom": "Anna"
-                    }
-                }
-            ],
-            "nomTour": "Tour N\u00b0 : 0"
-        },
-        {
-            "dateDeDebut": "2",
-            "dateDeFin": "1",
-            "matchs": [
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
                             "point": 2,
-                            "prenom": "Adbou"
-                        },
-                        "qualifier": -1,
-                        "score": 1
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
+                            "prenom": "Issouf"
                         },
                         "qualifier": 1,
                         "score": 2
                     },
                     "vainqueur": {
                         "dateDeNaissance": "01/01/2000",
-                        "id": "IK00003",
-                        "nom": "Ouedrago",
+                        "id": "IK00008",
+                        "nom": "Malle",
+                        "point": 2,
+                        "prenom": "Issouf"
+                    }
+                }
+            ],
+            "nomTour": "Tour N\u00b0 : 0"
+        },
+        {
+            "dateDeDebut": "11",
+            "dateDeFin": "11",
+            "matchs": [
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00008",
+                            "nom": "Malle",
+                            "point": 2,
+                            "prenom": "Issouf"
+                        },
+                        "qualifier": -1,
+                        "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 3,
+                            "prenom": "Dipa"
+                        },
+                        "qualifier": 1,
+                        "score": 2
+                    },
+                    "vainqueur": {
+                        "dateDeNaissance": "01/01/1993",
+                        "id": "IK00002",
+                        "nom": "Sacko",
                         "point": 3,
-                        "prenom": "Anna"
+                        "prenom": "Dipa"
                     }
                 }
             ],
@@ -252,10 +252,10 @@
         }
     ],
     "vainqueurFinal": {
-        "dateDeNaissance": "01/01/2000",
-        "id": "IK00003",
-        "nom": "Ouedrago",
+        "dateDeNaissance": "01/01/1993",
+        "id": "IK00002",
+        "nom": "Sacko",
         "point": 3,
-        "prenom": "Anna"
+        "prenom": "Dipa"
     }
 }

@@ -122,6 +122,17 @@ Insert gif or link to demo
 What did you learn while building this project? What challenges did you face and how did you overcome them?
 
 
+## Flake8 generate html report
+
+install flake8 with following command
+
+==> pip install flake8-html
+
+then do
+
+flake8 --format=html --htmldir=flake-report
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
