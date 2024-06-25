@@ -1,5 +1,3 @@
-# Projet4_Tournoi_Jeux_Echecs
-
 
 # Projet 4 :  <Projet4_Tournoi_Jeux_Echecs>
 
