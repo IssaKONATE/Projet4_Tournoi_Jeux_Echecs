@@ -3,8 +3,13 @@
 
 # Projet 4 :  <Projet4_Tournoi_Jeux_Echecs>
 
+## Architecture MVC ci-dessous
 
-## Mise en place du projet: <img src="ressources/Diagram-MVC.pdf" widht="250" height="250">
+<img src="ressources/Diagram-MVC.png" widht="250" height="250">
+
+## Mise en place du projet: 
+
+
 
 ## Pipeline ETL du code d’application python exécutable à la demande 
       
