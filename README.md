@@ -3,7 +3,7 @@
 
 # Projet 4 :  <Projet4_Tournoi_Jeux_Echecs>
 
-<img src="ressources/chess.png" widht="250" height="250">
+<img src="ressources/chess.jpeg" widht="250" height="250">
 
 ## Architecture MVC ci-dessous
 
