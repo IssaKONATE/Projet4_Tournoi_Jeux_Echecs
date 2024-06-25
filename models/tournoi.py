@@ -2,12 +2,12 @@ import json
 from models.Tour import Tour
 from models.Match import Match
 from models.joueur import Joueur
+
 # Choisis de manière aléatoire un élément dans une liste
 from random import choice
 
 
-class Tournoi(object) :
-
+class Tournoi(object):
     """
     Cette classe nommée Tournoi représente le modèle du tournoi
 
@@ -25,7 +25,9 @@ class Tournoi(object) :
     vainqueurFinal = None
 
     # Ici on définit un constructeur de l'objet Tournoi
-    def __init__(self, nom, lieu, dateDeDebut, dateDeFin, nombreTours, numeroTourActuel):
+    def __init__(
+        self, nom, lieu, dateDeDebut, dateDeFin, nombreTours, numeroTourActuel
+    ):
         self.nom = nom
         self.lieu = lieu
         self.dateDeDebut = dateDeDebut
@@ -38,23 +40,30 @@ class Tournoi(object) :
         self.tours = [Tour("", "", "", self.tirage())]
 
     def ajouterJoueur(self, joueur):
-
         """
         Cette méthode permet d'ajouter un joueur à la liste des joueurs
         Args:
            joueur (Joueur): le joueur à ajouter à la liste
         """
 
-        found = any(x.nom == joueur.nom and x.prenom == joueur.prenom for x in self.joueursJson)
-        if (found):
-            print("Ce joueur est déjà enregistré ==> ",
-                  joueur.nom, " ", joueur.prenom, " ", "Date de naissance: ", joueur.dateDeNaissance)
+        found = any(
+            x.nom == joueur.nom and x.prenom == joueur.prenom for x in self.joueursJson
+        )
+        if found:
+            print(
+                "Ce joueur est déjà enregistré ==> ",
+                joueur.nom,
+                " ",
+                joueur.prenom,
+                " ",
+                "Date de naissance: ",
+                joueur.dateDeNaissance,
+            )
         else:
             # sinon ajouter le joueur
             self.joueursJson.append(joueur)
 
     def initJoueursParFichierJson(self):
-
         """
         Cette méthode permet d'initialiser la liste des joueurs à partir d'un fichier json
         Args:
@@ -68,15 +77,16 @@ class Tournoi(object) :
             # parcours de la liste des joueurs
             for joueur in dataJoueurs:
                 # Ajout des données json(joueurs) dans la liste des joueurs
-                nom = joueur['nom']
-                prenom = joueur['prenom']
-                dateNaissance = joueur['dateDeNaissance']
-                id = joueur['id']
-                self.ajouterJoueur(Joueur(nom=nom, prenom=prenom, dateDeNaissance=dateNaissance, id=id))
+                nom = joueur["nom"]
+                prenom = joueur["prenom"]
+                dateNaissance = joueur["dateDeNaissance"]
+                id = joueur["id"]
+                self.ajouterJoueur(
+                    Joueur(nom=nom, prenom=prenom, dateDeNaissance=dateNaissance, id=id)
+                )
 
     # Tirage au sort des joueurs et établit la liste des matchs pour ce tour
     def tirage(self):
-
         """
         Cette méthode permet de faire le tirage de façon aléatoire à partir de la liste des joueurs.
         Args:

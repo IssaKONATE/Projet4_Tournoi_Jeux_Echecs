@@ -1,6 +1,4 @@
-
-class MatchScoring(object) :
-
+class MatchScoring(object):
     """
     Cette classe nommée MatchScoring représente le score du joueur pendant le match
     Attributes:

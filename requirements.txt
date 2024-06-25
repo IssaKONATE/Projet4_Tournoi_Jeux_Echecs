@@ -1,4 +1,4 @@
-black==24.4.2
+fblack==24.4.2
 click==8.1.7
 flake8==7.1.0
 flake8-black==0.3.6

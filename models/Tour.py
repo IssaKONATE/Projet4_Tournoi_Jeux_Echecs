@@ -1,5 +1,4 @@
 class Tour(object):
-
     """
     Cette classe nommée Tour représente le Tour du tournoi
     Attributes:

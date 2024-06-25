@@ -2,8 +2,7 @@ from models.Match import Match
 from models.joueur import Joueur
 
 
-class TournoiScreen(object) :
-
+class TournoiScreen(object):
     """
     Cette classe nommée TournoiScreen représente la vue
 
@@ -15,7 +14,6 @@ class TournoiScreen(object) :
         pass
 
     def round(self, match: Match):
-
         """
         cette méthode round permet lancer un round
         Args:
@@ -30,7 +28,6 @@ class TournoiScreen(object) :
         match.scoring2.score = self.readInput()
 
     def readInput(self):
-
         """
         cette méthode permet de lire un entier depuis le terminal
         Args:
@@ -51,7 +48,6 @@ class TournoiScreen(object) :
 
     # permet de lire les données sur la sorties?
     def afficherMatch(self, match: Match):
-
         """
         cette méthode permet d'afficher les joueurs avec leur score
         Args:
@@ -59,6 +55,7 @@ class TournoiScreen(object) :
         """
         self.afficherJoueur(match.scoring1.joueur)
         self.afficherJoueur(match.scoring2.joueur)
+
     # explication classread input
 
     def afficherJoueur(self, joueur: Joueur):
@@ -67,5 +64,15 @@ class TournoiScreen(object) :
         Args:
             Aucun
         """
-        print("Id: ", joueur.id, ", Nom : ", joueur.nom, ",Prenom : ", joueur.prenom, ", Date de naissance : "
-              , joueur.dateDeNaissance, ", Point : ", joueur.point)
+        print(
+            "Id: ",
+            joueur.id,
+            ", Nom : ",
+            joueur.nom,
+            ",Prenom : ",
+            joueur.prenom,
+            ", Date de naissance : ",
+            joueur.dateDeNaissance,
+            ", Point : ",
+            joueur.point,
+        )

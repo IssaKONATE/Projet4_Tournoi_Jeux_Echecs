@@ -1,4 +1,4 @@
-class Joueur(object) :
+class Joueur(object):
     """
     Cette classe nommée Joueur modélise un joueur.
     Attributes:
