@@ -58,6 +58,3 @@ class TournoiController(object):
                 )
             )
             tournoi.numeroTourActuel += 1
-
-
-# explication

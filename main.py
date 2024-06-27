@@ -29,13 +29,13 @@ if __name__ == "__main__":
     f.write(tournoiJson)
     f.close()
     print("Tournoi EN COURS terminé  !!!")
-    
+
     print("Debut du tournoi sauvegardé...")
-    tournoi2 = None
+    tournoiSauvegarder = None
     with open("output/tournoi.pkl", "rb") as in_file:
-        tournoi2 = pickle.load(in_file)
-    controller.deroulerTour(tournoi2, matchScreen)
-    tournoi2Json = json.dumps(
-        tournoi2, default=lambda o: o.__dict__, sort_keys=True, indent=4
+        tournoiSauvegarder = pickle.load(in_file)
+    controller.deroulerTour(tournoiSauvegarder, matchScreen)
+    tournoiSauvegarderJson = json.dumps(
+        tournoiSauvegarder, default=lambda o: o.__dict__, sort_keys=True, indent=4
     )
-    print(tournoi2Json)
+    print(tournoiSauvegarderJson)

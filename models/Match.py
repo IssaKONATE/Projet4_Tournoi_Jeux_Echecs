@@ -21,13 +21,13 @@ class Match(object):
         Args:
             Aucun argument
         """
-        if(round == False):
+        if (not round):
             self.scoring1.joueur.point = self.scoring1.joueur.point + 0.5
             self.scoring2.joueur.point = self.scoring2.joueur.point + 0.5
-            if(self.scoring1.score > self.scoring2.score):
-               self.vainqueur = self.scoring1.joueur
+            if (self.scoring1.score > self.scoring2.score):
+                self.vainqueur = self.scoring1.joueur
             else:
-                self.vainqueur = self.scoring2.joueur 
+                self.vainqueur = self.scoring2.joueur
         elif self.scoring1.score > self.scoring2.score:
             self.scoring1.joueur.point = self.scoring1.joueur.point + 1
             self.scoring1.qualifier = 1
@@ -38,5 +38,3 @@ class Match(object):
             self.scoring1.qualifier = -1
             self.scoring2.qualifier = 1
             self.vainqueur = self.scoring2.joueur
-    
-            
