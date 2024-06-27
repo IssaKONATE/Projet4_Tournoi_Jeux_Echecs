@@ -15,13 +15,20 @@ class Match(object):
         self.vainqueur = None
 
     # Elle permet de déterminer lequel des joueurs a gagné et attribuer les points aux joueurs
-    def updateScore(self):
+    def updateScore(self, round):
         """
         Cette méthode permet de mettre à jour le point des joueurs après la fin de ce match
         Args:
             Aucun argument
         """
-        if self.scoring1.score > self.scoring2.score:
+        if(round == False):
+            self.scoring1.joueur.point = self.scoring1.joueur.point + 0.5
+            self.scoring2.joueur.point = self.scoring2.joueur.point + 0.5
+            if(self.scoring1.score > self.scoring2.score):
+               self.vainqueur = self.scoring1.joueur
+            else:
+                self.vainqueur = self.scoring2.joueur 
+        elif self.scoring1.score > self.scoring2.score:
             self.scoring1.joueur.point = self.scoring1.joueur.point + 1
             self.scoring1.qualifier = 1
             self.scoring2.qualifier = -1
@@ -31,6 +38,5 @@ class Match(object):
             self.scoring1.qualifier = -1
             self.scoring2.qualifier = 1
             self.vainqueur = self.scoring2.joueur
-        else:
-            self.scoring1.joueur.point = self.scoring1.joueur.point + 0.5
-            self.scoring2.joueur.point = self.scoring2.joueur.point + 0.5
+    
+            

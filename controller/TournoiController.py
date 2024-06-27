@@ -34,8 +34,8 @@ class TournoiController(object):
                     pickle.dump(tournoi, out_file)
                 print("Sauvegarde terminée.....")
             for match in tournoi.tours[tournoi.numeroTourActuel].matchs:
-                tournoiScreen.round(match)
-                match.updateScore()
+                round = tournoiScreen.round(match)
+                match.updateScore(round)
                 tournoiScreen.afficherMatch(match)
                 joueursQualifies.append(match.vainqueur)
             # Ici on recupère les joueurs qualifiés pour ce tour

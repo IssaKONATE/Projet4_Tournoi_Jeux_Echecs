@@ -26,6 +26,12 @@ class TournoiScreen(object):
         print("Veuillez enregistrer le score du joueur ")
         self.afficherJoueur(match.scoring2.joueur)
         match.scoring2.score = self.readInput()
+        if(match.scoring1.score == match.scoring2.score):
+            print("Match nul, Veuillez recommencer...")
+            self.round(match=match)
+        else:
+            return True
+        return False
 
     def readInput(self):
         """
