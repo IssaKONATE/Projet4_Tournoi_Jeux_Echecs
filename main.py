@@ -29,6 +29,7 @@ if __name__ == "__main__":
     f.write(tournoiJson)
     f.close()
     print("Tournoi EN COURS terminé  !!!")
+    
     print("Debut du tournoi sauvegardé...")
     tournoi2 = None
     with open("output/tournoi.pkl", "rb") as in_file:
