@@ -26,12 +26,6 @@ class TournoiScreen(object):
         print("Veuillez enregistrer le score du joueur ")
         self.afficherJoueur(match.scoring2.joueur)
         match.scoring2.score = self.readInput()
-        if (match.scoring1.score == match.scoring2.score):
-            print("Match nul, Veuillez recommencer...")
-            self.round(match=match)
-        else:
-            return True
-        return False
 
     def readInput(self):
         """
@@ -71,7 +65,7 @@ class TournoiScreen(object):
             Aucun
         """
         print(
-            "Id: ",
+            "** Id: ",
             joueur.id,
             ", Nom : ",
             joueur.nom,
@@ -82,3 +76,13 @@ class TournoiScreen(object):
             ", Point : ",
             joueur.point,
         )
+    
+    def trierParNom(listeDico):
+        return listeDico.nom
+
+    def afficherJoueurs(self, joueurs):
+        print("******************** La liste des joueurs du tournoi est la suivante ********************")
+        joueurs.sort(key=lambda joueur:joueur.nom+joueur.prenom)
+        for joueur in joueurs:
+            self.afficherJoueur(joueur=joueur)
+        print("******************** ******************** ******************** ******************** ******")
