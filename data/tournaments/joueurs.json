@@ -2,7 +2,7 @@
   {
     "id": "IK00001",
     "nom": "Diawara",
-    "prenom": "Issa",
+    "prenom": "Souley",
     "dateDeNaissance": "01/01/1988"
   },
   {
@@ -39,18 +39,6 @@
     "id": "IK00007",
     "nom": "Sacko",
     "prenom": "Adbou",
-    "dateDeNaissance": "01/01/2000"
-  },
-  {
-    "id": "IK00008",
-    "nom": "Malle",
-    "prenom": "Issouf",
-    "dateDeNaissance": "01/01/2000"
-  },
-  {
-    "id": "IK00009",
-    "nom": "Sacko",
-    "prenom": "Yacou",
     "dateDeNaissance": "01/01/2000"
   }
 ]

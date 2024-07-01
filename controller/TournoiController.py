@@ -1,6 +1,5 @@
 from datetime import date
 import pickle
-from models.Tour import Tour
 from models.tournoi import Tournoi
 from vue.TournoiScreen import TournoiScreen
 
@@ -31,14 +30,18 @@ class TournoiController(object):
             )
             if saveOrNot == "Y":
                 print("Sauvegarde en cours.....")
-                with open("bin/tournoi.pkl", "wb") as out_file:
+                with open("sauvegarde/tournoi.pkl", "wb") as out_file:
                     pickle.dump(tournoi, out_file)
                 print("Sauvegarde terminée.....")
             for match in tournoi.tours[tournoi.numeroTourActuel].matchs:
                 tournoiScreen.round(match)
                 match.updateScore()
                 tournoiScreen.afficherMatch(match)
-                print("----------------------------------------------------------------")
+                print(
+                    "----------------------------------------------------------------"
+                )
+
+            tournoiScreen.afficherJoueurParPointDecroissant(tournoi.joueurs)
             tournoi.numeroTourActuel += 1
         tournoi.dateDeFin = date.today().strftime("%d/%m/%Y")
         print("Fin de tournoi au : ***************")

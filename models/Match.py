@@ -20,7 +20,7 @@ class Match(object):
         Args:
             Aucun argument
         """
-        
+
         if self.scoring1.score > self.scoring2.score:
             self.scoring1.joueur.point = self.scoring1.joueur.point + 1
         elif self.scoring1.score < self.scoring2.score:

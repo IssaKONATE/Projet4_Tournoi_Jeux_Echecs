@@ -1,10 +1,11 @@
 {
-    "dateDeDebut": "01/01/2024",
-    "dateDeFin": "29/06/2024",
-    "lieu": "Cote d'Ivoire",
-    "nom": "CAN 2024",
-    "nombreTours": 7,
-    "numeroTourActuel": 7,
+    "dateDeDebut": "02/07/2024",
+    "dateDeFin": "02/07/2024",
+    "lieu": "CI",
+    "nom": "CAN",
+    "nombreDeMatchParTour": 4.0,
+    "nombreTours": 5,
+    "numeroTourActuel": 5,
     "tours": [
         {
             "dateDeDebut": "",
@@ -13,65 +14,65 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1988",
-                            "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
-                            "prenom": "Issa"
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
                         },
                         "score": 1
                     },
                     "scoring2": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1993",
-                            "id": "IK00002",
-                            "nom": "Sacko",
-                            "point": 3,
-                            "prenom": "Dipa"
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
                         },
                         "score": 2
                     }
                 },
                 {
                     "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
-                        },
-                        "score": 1
-                    },
-                    "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00004",
                             "nom": "Ballo",
-                            "point": 4,
+                            "point": 2.5,
                             "prenom": "Madou"
                         },
-                        "score": 2
-                    }
-                },
-                {
-                    "scoring1": {
+                        "score": 3
+                    },
+                    "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Issa"
                         },
                         "score": 4
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Souley"
+                        },
+                        "score": 5
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "point": 3,
-                            "prenom": "Issa"
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 2.5,
+                            "prenom": "Anna"
                         },
                         "score": 6
                     }
@@ -80,22 +81,22 @@
                     "scoring1": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 4,
+                            "prenom": "Adbou"
                         },
-                        "score": 3
+                        "score": 2
                     },
                     "scoring2": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
                             "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
+                            "point": 3.5,
+                            "prenom": "Dipa"
                         },
-                        "score": 5
+                        "score": 6
                     }
                 }
             ],
@@ -108,65 +109,65 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1988",
-                            "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
-                            "prenom": "Issa"
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
                         },
                         "score": 1
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
+                            "id": "IK00004",
+                            "nom": "Ballo",
+                            "point": 2.5,
+                            "prenom": "Madou"
                         },
-                        "score": 3
+                        "score": 2
                     }
                 },
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1993",
-                            "id": "IK00002",
-                            "nom": "Sacko",
-                            "point": 3,
-                            "prenom": "Dipa"
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
                         },
-                        "score": 2
+                        "score": 1
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00004",
-                            "nom": "Ballo",
-                            "point": 4,
-                            "prenom": "Madou"
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Issa"
                         },
-                        "score": 5
+                        "score": 4
                     }
                 },
                 {
                     "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Souley"
+                        },
+                        "score": 6
+                    },
+                    "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00005",
                             "nom": "Sacko",
-                            "point": 2,
+                            "point": 4,
                             "prenom": "Adbou"
-                        },
-                        "score": 2
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
                         },
                         "score": 7
                     }
@@ -175,22 +176,22 @@
                     "scoring1": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "point": 3,
-                            "prenom": "Issa"
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 2.5,
+                            "prenom": "Anna"
                         },
-                        "score": 2
+                        "score": 3
                     },
                     "scoring2": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
                             "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
+                            "point": 3.5,
+                            "prenom": "Dipa"
                         },
-                        "score": 5
+                        "score": 4
                     }
                 }
             ],
@@ -203,11 +204,33 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1988",
-                            "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
+                        },
+                        "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 3,
                             "prenom": "Issa"
+                        },
+                        "score": 4
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
                         },
                         "score": 2
                     },
@@ -216,7 +239,7 @@
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00004",
                             "nom": "Ballo",
-                            "point": 4,
+                            "point": 2.5,
                             "prenom": "Madou"
                         },
                         "score": 6
@@ -225,118 +248,23 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1993",
-                            "id": "IK00002",
-                            "nom": "Sacko",
-                            "point": 3,
-                            "prenom": "Dipa"
-                        },
-                        "score": 2
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
-                        },
-                        "score": 7
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
-                        },
-                        "score": 3
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
-                            "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
-                        },
-                        "score": 7
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "point": 3,
-                            "prenom": "Issa"
-                        },
-                        "score": 2
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
-                        },
-                        "score": 5
-                    }
-                }
-            ],
-            "nomTour": "Tour XX"
-        },
-        {
-            "dateDeDebut": "",
-            "dateDeFin": "",
-            "matchs": [
-                {
-                    "scoring1": {
-                        "joueur": {
                             "dateDeNaissance": "01/01/1988",
                             "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
-                            "prenom": "Issa"
-                        },
-                        "score": 6
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
-                        },
-                        "score": 2
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/1993",
-                            "id": "IK00002",
-                            "nom": "Sacko",
+                            "nom": "Diawara",
                             "point": 3,
-                            "prenom": "Dipa"
+                            "prenom": "Souley"
                         },
                         "score": 8
                     },
                     "scoring2": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "point": 3,
-                            "prenom": "Issa"
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 3.5,
+                            "prenom": "Dipa"
                         },
-                        "score": 2
+                        "score": 3
                     }
                 },
                 {
@@ -345,42 +273,20 @@
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00003",
                             "nom": "Ouedrago",
-                            "point": 3,
+                            "point": 2.5,
                             "prenom": "Anna"
                         },
-                        "score": 4
+                        "score": 5
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
-                        },
-                        "score": 2
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00004",
-                            "nom": "Ballo",
+                            "id": "IK00005",
+                            "nom": "Sacko",
                             "point": 4,
-                            "prenom": "Madou"
+                            "prenom": "Adbou"
                         },
                         "score": 6
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
-                            "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
-                        },
-                        "score": 2
                     }
                 }
             ],
@@ -393,65 +299,43 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1988",
-                            "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
-                            "prenom": "Issa"
-                        },
-                        "score": 4
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "point": 3,
-                            "prenom": "Issa"
-                        },
-                        "score": 2
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/1993",
-                            "id": "IK00002",
-                            "nom": "Sacko",
-                            "point": 3,
-                            "prenom": "Dipa"
-                        },
-                        "score": 3
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
                         },
                         "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Souley"
+                        },
+                        "score": 4
                     }
                 },
                 {
                     "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
+                        },
+                        "score": 2
+                    },
+                    "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00003",
                             "nom": "Ouedrago",
-                            "point": 3,
+                            "point": 2.5,
                             "prenom": "Anna"
-                        },
-                        "score": 5
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
-                            "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
                         },
                         "score": 8
                     }
@@ -462,7 +346,7 @@
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00004",
                             "nom": "Ballo",
-                            "point": 4,
+                            "point": 2.5,
                             "prenom": "Madou"
                         },
                         "score": 2
@@ -470,10 +354,127 @@
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 4,
+                            "prenom": "Adbou"
+                        },
+                        "score": 6
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Issa"
+                        },
+                        "score": 2
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 3.5,
+                            "prenom": "Dipa"
+                        },
+                        "score": 5
+                    }
+                }
+            ],
+            "nomTour": "Tour XX"
+        },
+        {
+            "dateDeDebut": "",
+            "dateDeFin": "",
+            "matchs": [
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
+                        },
+                        "score": 1
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 2.5,
+                            "prenom": "Anna"
+                        },
+                        "score": 1
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
+                        },
+                        "score": 3
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Souley"
+                        },
+                        "score": 5
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00004",
+                            "nom": "Ballo",
+                            "point": 2.5,
+                            "prenom": "Madou"
+                        },
+                        "score": 4
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1993",
+                            "id": "IK00002",
+                            "nom": "Sacko",
+                            "point": 3.5,
+                            "prenom": "Dipa"
+                        },
+                        "score": 4
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Issa"
+                        },
+                        "score": 5
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 4,
+                            "prenom": "Adbou"
                         },
                         "score": 7
                     }
@@ -488,67 +489,45 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1988",
-                            "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
-                            "prenom": "Issa"
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
                         },
-                        "score": 1
+                        "score": 0
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 4,
+                            "prenom": "Adbou"
                         },
-                        "score": 3
+                        "score": 0
                     }
                 },
                 {
                     "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
+                        },
+                        "score": 0
+                    },
+                    "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/1993",
                             "id": "IK00002",
                             "nom": "Sacko",
-                            "point": 3,
+                            "point": 3.5,
                             "prenom": "Dipa"
                         },
-                        "score": 1
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
-                            "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
-                        },
-                        "score": 4
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
-                        },
-                        "score": 3
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00006",
-                            "nom": "Diawara",
-                            "point": 3,
-                            "prenom": "Issa"
-                        },
-                        "score": 4
+                        "score": 0
                     }
                 },
                 {
@@ -557,20 +536,42 @@
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00004",
                             "nom": "Ballo",
-                            "point": 4,
+                            "point": 2.5,
                             "prenom": "Madou"
                         },
-                        "score": 1
+                        "score": 0
                     },
                     "scoring2": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 2.5,
+                            "prenom": "Anna"
                         },
-                        "score": 5
+                        "score": 0
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00006",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Issa"
+                        },
+                        "score": 0
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Souley"
+                        },
+                        "score": 0
                     }
                 }
             ],
@@ -583,67 +584,23 @@
                 {
                     "scoring1": {
                         "joueur": {
-                            "dateDeNaissance": "01/01/1988",
-                            "id": "IK00001",
-                            "nom": "Konate",
-                            "point": 2,
-                            "prenom": "Issa"
+                            "dateDeNaissance": "11/11/2000",
+                            "id": "AHZHE",
+                            "nom": "AJI",
+                            "point": 0.5,
+                            "prenom": "AJO"
                         },
-                        "score": 1
+                        "score": 0
                     },
                     "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00009",
-                            "nom": "Sacko",
-                            "point": 6,
-                            "prenom": "Yacou"
-                        },
-                        "score": 4
-                    }
-                },
-                {
-                    "scoring1": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00003",
-                            "nom": "Ouedrago",
-                            "point": 3,
-                            "prenom": "Anna"
-                        },
-                        "score": 2
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00005",
-                            "nom": "Sacko",
-                            "point": 2,
-                            "prenom": "Adbou"
-                        },
-                        "score": 6
-                    }
-                },
-                {
-                    "scoring1": {
                         "joueur": {
                             "dateDeNaissance": "01/01/1993",
                             "id": "IK00002",
                             "nom": "Sacko",
-                            "point": 3,
+                            "point": 3.5,
                             "prenom": "Dipa"
                         },
-                        "score": 2
-                    },
-                    "scoring2": {
-                        "joueur": {
-                            "dateDeNaissance": "01/01/2000",
-                            "id": "IK00008",
-                            "nom": "Malle",
-                            "point": 5,
-                            "prenom": "Issouf"
-                        },
-                        "score": 4
+                        "score": 0
                     }
                 },
                 {
@@ -652,12 +609,46 @@
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00004",
                             "nom": "Ballo",
-                            "point": 4,
+                            "point": 2.5,
                             "prenom": "Madou"
                         },
-                        "score": 1
+                        "score": 0
                     },
                     "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/1988",
+                            "id": "IK00001",
+                            "nom": "Diawara",
+                            "point": 3,
+                            "prenom": "Souley"
+                        },
+                        "score": 0
+                    }
+                },
+                {
+                    "scoring1": {
+                        "joueur": {
+                            "dateDeNaissance": "11/12/2000",
+                            "id": "AHGHZT",
+                            "nom": "AUUI",
+                            "point": 1,
+                            "prenom": "EIEII"
+                        },
+                        "score": 0
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00005",
+                            "nom": "Sacko",
+                            "point": 4,
+                            "prenom": "Adbou"
+                        },
+                        "score": 0
+                    }
+                },
+                {
+                    "scoring1": {
                         "joueur": {
                             "dateDeNaissance": "01/01/2000",
                             "id": "IK00006",
@@ -665,7 +656,17 @@
                             "point": 3,
                             "prenom": "Issa"
                         },
-                        "score": 5
+                        "score": 0
+                    },
+                    "scoring2": {
+                        "joueur": {
+                            "dateDeNaissance": "01/01/2000",
+                            "id": "IK00003",
+                            "nom": "Ouedrago",
+                            "point": 2.5,
+                            "prenom": "Anna"
+                        },
+                        "score": 0
                     }
                 }
             ],

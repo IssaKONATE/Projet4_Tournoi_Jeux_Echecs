@@ -76,13 +76,47 @@ class TournoiScreen(object):
             ", Point : ",
             joueur.point,
         )
-    
+
     def trierParNom(listeDico):
         return listeDico.nom
 
     def afficherJoueurs(self, joueurs):
-        print("******************** La liste des joueurs du tournoi est la suivante ********************")
-        joueurs.sort(key=lambda joueur:joueur.nom+joueur.prenom)
+        print(
+            "******************** Liste des joueurs déjà inscrits ********************"
+        )
+        joueurs.sort(key=lambda joueur: joueur.nom + joueur.prenom)
         for joueur in joueurs:
             self.afficherJoueur(joueur=joueur)
-        print("******************** ******************** ******************** ******************** ******")
+        print(
+            "******************** ******************** ******************** ******************** ******"
+        )
+
+    def afficherJoueurParPointDecroissant(self, joueurs):
+        """
+        cette méthode permet d'afficher les joueurs par ordre de points decroissant
+        Args:
+            joueurs: list Joueur
+        """
+        print(
+            "******************** Classement des joueurs par point ********************"
+        )
+        joueurs.sort(key=lambda joueur: joueur.point, reverse=True)
+        for joueur in joueurs:
+            self.afficherJoueurParPoint(joueur=joueur)
+        print(
+            "******************** ******************** ******************** ******************** ******"
+        )
+
+    def afficherJoueurParPoint(self, joueur: Joueur):
+        """
+        cette méthode permet d'afficher joueur avec son point
+        Args:
+            joueur: Joueur
+        """
+        print(
+            joueur.prenom
+            + "  "
+            + joueur.nom
+            + "........................"
+            + str(joueur.point)
+        )
