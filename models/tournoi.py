@@ -32,7 +32,7 @@ class Tournoi(object):
         self.nombreTours = nombreTours
         self.numeroTourActuel = numeroTourActuel
         self.initJoueursParFichierJson()
-        self.nombreTours = len(self.joueurs) - 1
+        
 
         while len(self.joueurs) % 2 != 0:
             print(
@@ -136,7 +136,7 @@ class Tournoi(object):
         matchTmp = []
         intermediaire = []
         self.nombreDeMatchParTour = len(self.joueurs) / 2
-
+        self.nombreTours = len(self.joueurs) - 1
         for match in matchs:
             matchTmp.append(match)
 
