@@ -1,5 +1,8 @@
+import glob
+import json
 from models.Match import Match
 from models.joueur import Joueur
+from models.tournoi import Tournoi
 
 
 class TournoiScreen(object):
@@ -120,3 +123,18 @@ class TournoiScreen(object):
             + "........................"
             + str(joueur.point)
         )
+
+    def initTournoi(self):
+        print(
+            "\nA ==> Initialiser un tournoi\n",
+            "B ==> Lancer la sauvegarde \n",
+            "C ==> Generer rapport \n",
+            "D ==> Afficher rapport\n" "E ==> Quitter",
+        )
+        return input()
+
+    def afficherRapport(self, tournoi: Tournoi):
+        print(glob.glob("output/*.json"))
+        fileName = input("Entrer le nom du rapport que vous voudriez afficher : ")
+        f = open("output/" + fileName, "r")
+        print(f.read())

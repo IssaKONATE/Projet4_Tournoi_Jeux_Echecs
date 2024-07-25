@@ -1,4 +1,5 @@
 from datetime import date
+import glob
 import os
 import pickle
 import json
@@ -11,24 +12,12 @@ if __name__ == "__main__":
 
     controller = TournoiController()
     matchScreen: TournoiScreen = TournoiScreen()
+
+    tournoi = None
     while True:
-        if os.path.exists("sauvegarde/tournoi.pkl"):
-            playSauvegarde = input("\nVoudriez-vous lancer la sauvegarde ... (Y/N) ? ")
-            if playSauvegarde == "Y":
-                print("Debut du tournoi sauvegardé...")
-                tournoiSauvegarder = None
-                try:
-                    with open("sauvegarde/tournoi.pkl", "rb") as in_file:
-                        print("Chargement de la sauvegarde .....")
-                        tournoiSauvegarder = pickle.load(in_file)
-                        print("Fin chargement de la sauvegarde")
-                        controller.deroulerTour(tournoiSauvegarder, matchScreen)
-                except IOError:
-                    print("Error! Il n'existe pas de sauvegarde de jeu")
-
-        yesOrNot = input("Voudriez vous créer un nouveau tournoi (Y/N) ? ")
-
-        if yesOrNot == "Y":
+        inputRead = matchScreen.initTournoi()
+        if inputRead == "A" or inputRead == "a":
+            print("Début d'un nouveau tournoi ")
             # Créer le tournoi
             tournoi = Tournoi(
                 nom=input("Entrer Nom du tournoi: "),
@@ -38,12 +27,14 @@ if __name__ == "__main__":
                 nombreTours=4,
                 numeroTourActuel=0,
             )
+
+            controller.initJoueursParFichierJson(tournoi=tournoi)
             matchScreen.afficherJoueurs(tournoi.joueurs)
             retourInput = input(
                 "Voudriez-vous ajouter un nouveau joueur à la liste (Y/N) ? "
             )
             while retourInput == "Y":
-                tournoi.ajouterJoueurByTerminal(tournoi.joueurs)
+                controller.ajouterJoueurByTerminal(tournoi)
                 retourInput = input(
                     "Voudriez-vous ajouter un nouveau joueur à la liste (Y/N) ? "
                 )
@@ -51,24 +42,34 @@ if __name__ == "__main__":
                 print(
                     "Le nombre de joueurs ne doit pas être impair, veuillez ajouter un nouveau joueur"
                 )
-                tournoi.ajouterJoueurByTerminal(tournoi.joueurs)
-            matchScreen.afficherJoueurs(tournoi.joueurs)
+                controller.ajouterJoueurByTerminal(tournoi)
             print(
                 "La liste des joueurs est complète \n Nous pouvons demarrer le tournoi"
             )
-
-            tournoi.process(tournoi.tirage())
-
-            # Lance le deroulement du tournoi
+            controller.process(controller.tirage(tournoi), tournoi=tournoi)
             controller.deroulerTour(tournoi, matchScreen)
-            # Convertir l'objet tournoi en objet JSON
-            tournoiJson = json.dumps(
-                tournoi, default=lambda o: o.__dict__, sort_keys=True, indent=4
-            )
-            f = open("output/tournoi.json", "w")
-            f.write(tournoiJson)
-            f.close()
-            matchScreen.afficherJoueurs(tournoi.joueurs)
-        else:
+
+        elif inputRead == "B" or inputRead == "b":
+            print(glob.glob("sauvegarde/*.pkl"))
+            fileName = input("Entrer le nom de la sauvegarde à lancer : ")
+
+            if os.path.exists("sauvegarde/" + fileName):
+                try:
+                    with open("sauvegarde/" + fileName, "rb") as in_file:
+                        print("Chargement de la sauvegarde .....")
+                        tournoiSauvegarder = pickle.load(in_file)
+                        print("Fin chargement de la sauvegarde")
+                        controller.deroulerTour(tournoiSauvegarder, matchScreen)
+                except IOError:
+                    print("Error! Il n'existe pas de sauvegarde de jeu")
+            else:
+                print("Il n'existe aucune sauvegarde !!!")
+        elif inputRead == "C" or inputRead == "c":
+            controller.genererRapport(tournoi=tournoi)
+        elif inputRead == "D" or inputRead == "d":
+            matchScreen.afficherRapport(tournoi=tournoi)
+        elif inputRead == "E" or inputRead == "e":
+            print("Fin du programme!!")
             break
-    print("Fin du programme!!")
+        else:
+            print("Commande non reconnue !!!")

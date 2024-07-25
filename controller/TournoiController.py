@@ -1,5 +1,9 @@
 from datetime import date
+import json
 import pickle
+from models.Match import Match
+from models.Tour import Tour
+from models.joueur import Joueur
 from models.tournoi import Tournoi
 from vue.TournoiScreen import TournoiScreen
 
@@ -25,14 +29,6 @@ class TournoiController(object):
         print("Debut du tournoi au :", tournoi.dateDeDebut)
         while tournoi.numeroTourActuel < tournoi.nombreTours:
             print(" \n \nDebut du Tour : " + str(tournoi.numeroTourActuel + 1))
-            saveOrNot = input(
-                "Avant de passer au tour suivant, Voudriez vous faire une sauvegarde (Y/N) ? "
-            )
-            if saveOrNot == "Y":
-                print("Sauvegarde en cours.....")
-                with open("sauvegarde/tournoi.pkl", "wb") as out_file:
-                    pickle.dump(tournoi, out_file)
-                print("Sauvegarde terminée.....")
             for match in tournoi.tours[tournoi.numeroTourActuel].matchs:
                 tournoiScreen.round(match)
                 match.updateScore()
@@ -40,49 +36,30 @@ class TournoiController(object):
                 print(
                     "----------------------------------------------------------------"
                 )
-
+            yesOrNo = input("Voudriez-vous sauvegarder le tournoi ... (Y/N)")
+            if yesOrNo == "Y":
+                self.saveTournoi(tournoi=tournoi)
             tournoiScreen.afficherJoueurParPointDecroissant(tournoi.joueurs)
             tournoi.numeroTourActuel += 1
         tournoi.dateDeFin = date.today().strftime("%d/%m/%Y")
-        print("Fin de tournoi au : ***************")
+        print("Fin de tournoi au : ", tournoi.dateDeFin)
 
-    def ajouterJoueur(self, joueur):
-        """
-        Cette méthode permet d'ajouter un joueur à la liste des joueurs
-        Args:
-           joueur (Joueur): le joueur à ajouter à la liste
-        """
+    def saveTournoi(self, tournoi: Tournoi):
+        print("Sauvegarde en cours.....")
+        fileName = tournoi.nom + "_" + tournoi.lieu + "_tournoi.pkl"
+        with open("sauvegarde/" + fileName, "wb") as out_file:
+            pickle.dump(tournoi, out_file)
+        print("Sauvegarde terminée.....")
 
-        found = any(
-            x is not None and x.nom == joueur.nom and x.prenom == joueur.prenom
-            for x in self.joueurs
-        )
-        if found:
-            print(
-                "Ce joueur est déjà enregistré ==> ",
-                joueur.nom,
-                " ",
-                joueur.prenom,
-                " ",
-                "Date de naissance: ",
-                joueur.dateDeNaissance,
-            )
-            return None
-        else:
-            # sinon ajouter le joueur
-            print("joueur ajouté ....")
-            self.joueurs.append(joueur)
-            return joueur
-
-    def ajouterJoueurByTerminal(self, listeJoueur):
+    def ajouterJoueurByTerminal(self, tournoi):
         nom = input("Entrer nom : ")
         prenom = input("Entrer prenom : ")
         dateNaissance = input("Entrer date de naissance : ")
         id = input("Entrer Id: ")
         joueur = Joueur(nom=nom, prenom=prenom, dateDeNaissance=dateNaissance, id=id)
-        self.ajouterJoueur(joueur=joueur)
+        tournoi.ajouterJoueur(joueur=joueur)
 
-    def initJoueursParFichierJson(self):
+    def initJoueursParFichierJson(self, tournoi):
         """
         Cette méthode permet d'initialiser la liste des joueurs à partir d'un fichier json
         Args:
@@ -100,11 +77,11 @@ class TournoiController(object):
                 prenom = joueur["prenom"]
                 dateNaissance = joueur["dateDeNaissance"]
                 id = joueur["id"]
-                self.ajouterJoueur(
+                tournoi.ajouterJoueur(
                     Joueur(nom=nom, prenom=prenom, dateDeNaissance=dateNaissance, id=id)
                 )
 
-    def tirage(self):
+    def tirage(self, tournoi):
         """
         Cette méthode permet de faire le tirage de façon aléatoire à partir de la liste des joueurs.
         Chaque tour ou round est constitué de plusieurs matchs
@@ -117,16 +94,16 @@ class TournoiController(object):
         """
 
         joueursTirage = []
-        for joueur in self.joueurs:
+        for joueur in tournoi.joueurs:
             joueursTirage.append(joueur)
         matchs = []
         size = len(joueursTirage)
         for i in range(size):
             for j in range(i + 1, size):
-                matchs.append(Match(self.joueurs[i], self.joueurs[j]))
+                matchs.append(Match(tournoi.joueurs[i], tournoi.joueurs[j]))
         return matchs
 
-    def process(self, matchs):
+    def process(self, matchs, tournoi):
         """
         Cette méthode permet de faire le tirage de façon aléatoire à partir de la liste des joueurs.
         Chaque tour ou round est constitué de plusieurs matchs
@@ -141,8 +118,8 @@ class TournoiController(object):
         listeTours = []
         matchTmp = []
         intermediaire = []
-        self.nombreDeMatchParTour = len(self.joueurs) / 2
-        self.nombreTours = len(self.joueurs) - 1
+        tournoi.nombreDeMatchParTour = len(tournoi.joueurs) / 2
+        tournoi.nombreTours = len(tournoi.joueurs) - 1
         for match in matchs:
             matchTmp.append(match)
 
@@ -157,9 +134,9 @@ class TournoiController(object):
                 )
                 if not found:
                     matchTmp.remove(matchChoice)
-                    if len(intermediaire) < self.nombreDeMatchParTour:
+                    if len(intermediaire) < tournoi.nombreDeMatchParTour:
                         intermediaire.append(matchChoice)
-                if len(intermediaire) >= self.nombreDeMatchParTour:
+                if len(intermediaire) >= tournoi.nombreDeMatchParTour:
                     listeTours.append(
                         Tour(
                             dateDeDebut="",
@@ -169,6 +146,15 @@ class TournoiController(object):
                         )
                     )
                     intermediaire = []
-        self.tours = listeTours
+        tournoi.tours = listeTours
         return listeTours
 
+    def genererRapport(self, tournoi: Tournoi):
+        # Convertir l'objet tournoi en objet JSON
+        tournoiJson = json.dumps(
+            tournoi, default=lambda o: o.__dict__, sort_keys=True, indent=4
+        )
+        nomFichier = "output/" + tournoi.nom + "_" + tournoi.lieu + "_" + "tournoi.json"
+        f = open(nomFichier, "w")
+        f.write(tournoiJson)
+        f.close()
